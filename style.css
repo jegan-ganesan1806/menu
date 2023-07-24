@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("bg.webp");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.menu{
+    background: green;
+    text-align: center;
+}
+
+.menu ul{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+
+}
+
+.menu ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.active, .menu ul li:hover{
+    background: #2bab0d;
+    border-radius: 3px;
+}
+
+.menu{
+    margin-right: 8px;
+}
+
+.sub1{
+    display: none;
+}
+
+.menu ul li:hover .sub1{
+    display: block;
+    position: absolute;
+    background: green;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu ul li:hover .sub1 ul{
+    display: block;
+    margin: 10px;
+}
+
+.menu ul li:hover .sub1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    text-align: left;
+}
+
+.menu ul li:hover .sub1 ul li:last-child{
+    border-bottom: none;
+}
+
+.menu ul li:hover .sub1 ul li a:hover{
+    color: yellow;
+}
+
+.sub2{
+    display: none;
+}
+
+.hov-me:hover .sub2{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background: green;
+}
